@@ -6,6 +6,7 @@ import design.patterns.behavioral.strategy.with.vehicle.RallyVehicle;
 import design.patterns.behavioral.strategy.with.vehicle.Vehicle;
 
 public class Main {
+    private Main(){}
     static void main() {
         Vehicle driftVehicle = new DriftVehicle();
         Vehicle rallyVehicle = new RallyVehicle();

@@ -1,24 +1,24 @@
 //Each Class has Single Responsibility.
 void main() {
-    Item pen = new Item("pen", 10);
+    Item pen = new Item();
     Invoice invoice = new Invoice();
-    int calculatedPrice = invoice.calculatePrice(pen, 5);
+    int calculatedPrice = invoice.calculatePrice(pen);
     Printer printer = new Printer();
     printer.printBill(pen,calculatedPrice);
 }
 
 static class Item {
-    String name;
-    int price;
-    Item(String name,int price){
-        this.name = name;
-        this.price = price;
+    final String name;
+    final int price;
+    Item(){
+        this.name = "pen";
+        this.price = 10;
     }
 }
 
 static class Invoice {
-    private int calculatePrice(Item item,int quantity) {
-        return item.price*quantity;
+    private int calculatePrice(Item item) {
+        return item.price* 5;
     }
 }
 
