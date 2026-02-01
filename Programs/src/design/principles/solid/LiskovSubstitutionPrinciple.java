@@ -1,3 +1,5 @@
+package design.principles.solid;
+
 //if class B is subclass of class A then we should be able to replace class A with class B without breaking the behavior of the program.
 public class LiskovSubstitutionPrinciple {
 }

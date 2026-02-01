@@ -1,3 +1,5 @@
+package design.principles.solid;
+
 //class should depend on interface rather than concrete classes
 public class DependencyInversionPrinciple {
     static void main() {

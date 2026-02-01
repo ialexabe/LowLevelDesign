@@ -1,3 +1,5 @@
+package design.principles.solid;
+
 //Open for Extension but closed for modification.
 public class OpenClosedPrinciple {
 

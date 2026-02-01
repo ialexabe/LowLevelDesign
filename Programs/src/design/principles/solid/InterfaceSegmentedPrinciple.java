@@ -1,3 +1,5 @@
+package design.principles.solid;
+
 //Interfaces should be such, that the client should not need implement unnecessary functions they do not need.
 public class InterfaceSegmentedPrinciple {
 }
